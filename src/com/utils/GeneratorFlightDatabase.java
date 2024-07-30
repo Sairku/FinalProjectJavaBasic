@@ -1,13 +1,10 @@
 package com.utils;
-import com.OnlineScoreboard;
+import com.informationForFlight.OnlineScoreboard;
 
 import java.io.*;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.Random;
+import java.util.*;
 import java.time.format.DateTimeFormatter;
 
 public class GeneratorFlightDatabase {
@@ -69,7 +66,12 @@ public class GeneratorFlightDatabase {
             Optional<String> filteredFlight = flights.stream()
                     .filter(flight -> flight.contains("id=" + flightId))
                     .findFirst();
-            System.out.println(filteredFlight);
+
+            if (filteredFlight.isPresent()) {
+                System.out.println(filteredFlight.get());
+            } else {
+                System.out.println("The flight with the ID was not found.");
+            }
 
         } catch (IOException e) {
             e.printStackTrace();
