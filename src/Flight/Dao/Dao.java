@@ -29,7 +29,7 @@ public class Dao implements IDao<Flight> {
     @Override
     public List<Flight> getAll() {
         // Возвращаем список всех полетов
-        return new ArrayList<>(flights);
+        return flights;
     }
 
     @Override
