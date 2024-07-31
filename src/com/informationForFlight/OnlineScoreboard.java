@@ -10,7 +10,7 @@ public class OnlineScoreboard implements Serializable {
     private String departureTime;
     private String from;
     private String to;
-    private String freeSeats = "100";
+    private int freeSeats = 100;
 
     public OnlineScoreboard(String from, String to, String departureTime){
         this.id = new Random().nextInt(90000)+10000;
@@ -21,13 +21,6 @@ public class OnlineScoreboard implements Serializable {
 
     @Override
     public String toString() {
-        return "{" +
-                "id=" + id +
-                ", departureTime=" + departureTime +
-                ", from='" + from + '\'' +
-                ", to='" + to +
-                '\'' +
-                '}';
+        return "id = " + id + ", departureTime = " + departureTime + ", from = " + from + ", to = " + to + ", freeSeats = " + freeSeats;
     }
-
 }

@@ -42,10 +42,10 @@ public class GeneratorFlightDatabase {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(",");
-                String dateTimeString = parts[1].split("=")[1];
+                String dateTimeString = parts[1].split("=")[1].trim();
                 LocalDateTime inputDateTime = LocalDateTime.parse(dateTimeString, formatter);
 
-                if (parts.length == 4 && inputDateTime.isBefore(dateTimePlus24Hours)) {
+                if (parts.length == 5 && inputDateTime.isBefore(dateTimePlus24Hours)) {
                     String lineTxt = parts[0] + " " + parts[1] + " " + parts[2] + " " + parts[3];
                     System.out.println(lineTxt);
                 }
@@ -64,7 +64,7 @@ public class GeneratorFlightDatabase {
                 flights.add(line);
             }
             Optional<String> filteredFlight = flights.stream()
-                    .filter(flight -> flight.contains("id=" + flightId))
+                    .filter(flight -> flight.contains("id = " + flightId + ","))
                     .findFirst();
 
             if (filteredFlight.isPresent()) {

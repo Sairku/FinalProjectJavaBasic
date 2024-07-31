@@ -1,100 +1,100 @@
-{id=62339, departureTime=2024-07-31 21:03, from='New York', to='Paris'}
-{id=80990, departureTime=2024-07-31 02:03, from='London', to='Kyiv'}
-{id=58238, departureTime=2024-08-01 02:03, from='Tokyo', to='New York'}
-{id=39274, departureTime=2024-07-31 12:03, from='Paris', to='London'}
-{id=94995, departureTime=2024-08-01 08:03, from='London', to='Berlin'}
-{id=99771, departureTime=2024-07-31 09:03, from='Paris', to='New York'}
-{id=68448, departureTime=2024-07-31 20:03, from='Paris', to='New York'}
-{id=34157, departureTime=2024-08-01 12:03, from='Kyiv', to='New York'}
-{id=94650, departureTime=2024-07-31 16:03, from='Rome', to='Paris'}
-{id=51735, departureTime=2024-07-31 00:03, from='New York', to='Berlin'}
-{id=46998, departureTime=2024-08-01 19:03, from='London', to='Tokyo'}
-{id=29464, departureTime=2024-07-31 19:03, from='Rome', to='Kyiv'}
-{id=32666, departureTime=2024-08-01 15:03, from='Rome', to='Tokyo'}
-{id=74526, departureTime=2024-07-31 17:03, from='London', to='New York'}
-{id=89408, departureTime=2024-08-01 14:03, from='Kyiv', to='New York'}
-{id=92078, departureTime=2024-07-31 18:03, from='Kyiv', to='Paris'}
-{id=43076, departureTime=2024-07-31 13:03, from='Berlin', to='Paris'}
-{id=13122, departureTime=2024-07-31 03:03, from='Berlin', to='Kyiv'}
-{id=36943, departureTime=2024-07-31 11:03, from='New York', to='New York'}
-{id=14922, departureTime=2024-08-01 17:03, from='London', to='Rome'}
-{id=71964, departureTime=2024-08-01 07:03, from='Rome', to='New York'}
-{id=88904, departureTime=2024-07-31 14:03, from='New York', to='New York'}
-{id=78934, departureTime=2024-08-01 17:03, from='Berlin', to='Berlin'}
-{id=24204, departureTime=2024-07-31 22:03, from='Paris', to='Tokyo'}
-{id=78489, departureTime=2024-07-31 08:03, from='London', to='Rome'}
-{id=20542, departureTime=2024-08-01 12:03, from='Kyiv', to='Tokyo'}
-{id=53604, departureTime=2024-08-01 03:03, from='Kyiv', to='Paris'}
-{id=16249, departureTime=2024-07-31 00:03, from='Rome', to='Kyiv'}
-{id=66973, departureTime=2024-08-01 19:03, from='Paris', to='New York'}
-{id=64291, departureTime=2024-07-31 05:03, from='Paris', to='Kyiv'}
-{id=33185, departureTime=2024-08-01 07:03, from='New York', to='Rome'}
-{id=71825, departureTime=2024-07-31 05:03, from='New York', to='London'}
-{id=78961, departureTime=2024-08-01 07:03, from='Tokyo', to='Berlin'}
-{id=89363, departureTime=2024-07-31 22:03, from='Rome', to='Paris'}
-{id=51438, departureTime=2024-07-31 14:03, from='Kyiv', to='Paris'}
-{id=61716, departureTime=2024-07-31 04:03, from='London', to='Rome'}
-{id=20141, departureTime=2024-07-31 18:03, from='New York', to='Berlin'}
-{id=59390, departureTime=2024-07-31 22:03, from='Kyiv', to='Paris'}
-{id=69620, departureTime=2024-07-31 14:03, from='Tokyo', to='New York'}
-{id=88583, departureTime=2024-07-31 01:03, from='New York', to='Paris'}
-{id=91736, departureTime=2024-07-31 17:03, from='New York', to='Tokyo'}
-{id=20395, departureTime=2024-08-01 14:03, from='New York', to='Tokyo'}
-{id=55444, departureTime=2024-08-01 02:03, from='Kyiv', to='Berlin'}
-{id=56453, departureTime=2024-08-01 19:03, from='Kyiv', to='New York'}
-{id=96509, departureTime=2024-07-31 11:03, from='New York', to='New York'}
-{id=82802, departureTime=2024-08-01 19:03, from='Tokyo', to='New York'}
-{id=42983, departureTime=2024-08-01 19:03, from='Berlin', to='London'}
-{id=51117, departureTime=2024-07-31 19:03, from='New York', to='Paris'}
-{id=41176, departureTime=2024-08-01 07:03, from='Paris', to='Paris'}
-{id=31055, departureTime=2024-08-01 19:03, from='Berlin', to='New York'}
-{id=79208, departureTime=2024-08-01 00:03, from='Kyiv', to='Paris'}
-{id=53983, departureTime=2024-07-31 19:03, from='Paris', to='Paris'}
-{id=15864, departureTime=2024-08-01 11:03, from='Tokyo', to='Paris'}
-{id=88115, departureTime=2024-08-01 01:03, from='Tokyo', to='Paris'}
-{id=75447, departureTime=2024-08-01 08:03, from='Kyiv', to='London'}
-{id=59836, departureTime=2024-07-31 16:03, from='Rome', to='Tokyo'}
-{id=45843, departureTime=2024-08-01 04:03, from='Berlin', to='New York'}
-{id=80879, departureTime=2024-08-01 14:03, from='Tokyo', to='Rome'}
-{id=23318, departureTime=2024-08-01 08:03, from='Rome', to='London'}
-{id=21219, departureTime=2024-08-01 15:03, from='Tokyo', to='Paris'}
-{id=54195, departureTime=2024-08-01 11:03, from='Paris', to='Berlin'}
-{id=48386, departureTime=2024-08-01 04:03, from='Paris', to='Berlin'}
-{id=21808, departureTime=2024-07-31 07:03, from='London', to='Rome'}
-{id=95873, departureTime=2024-08-01 16:03, from='Kyiv', to='New York'}
-{id=26347, departureTime=2024-08-01 20:03, from='Rome', to='Tokyo'}
-{id=47311, departureTime=2024-08-01 09:03, from='Tokyo', to='Kyiv'}
-{id=16644, departureTime=2024-07-30 23:03, from='New York', to='New York'}
-{id=35706, departureTime=2024-08-01 17:03, from='Tokyo', to='Berlin'}
-{id=47634, departureTime=2024-08-01 19:03, from='Rome', to='Kyiv'}
-{id=82367, departureTime=2024-07-31 14:03, from='London', to='Kyiv'}
-{id=79177, departureTime=2024-08-01 22:03, from='New York', to='Tokyo'}
-{id=49660, departureTime=2024-08-01 09:03, from='Rome', to='Tokyo'}
-{id=74503, departureTime=2024-07-31 09:03, from='Paris', to='Tokyo'}
-{id=39603, departureTime=2024-07-31 02:03, from='Berlin', to='Tokyo'}
-{id=42229, departureTime=2024-07-31 01:03, from='Kyiv', to='London'}
-{id=14036, departureTime=2024-07-31 07:03, from='Berlin', to='New York'}
-{id=28323, departureTime=2024-07-31 11:03, from='Tokyo', to='London'}
-{id=43391, departureTime=2024-07-31 16:03, from='Berlin', to='Tokyo'}
-{id=54701, departureTime=2024-08-01 10:03, from='Berlin', to='Kyiv'}
-{id=24354, departureTime=2024-07-31 14:03, from='Tokyo', to='Rome'}
-{id=51429, departureTime=2024-07-31 10:03, from='Tokyo', to='New York'}
-{id=83434, departureTime=2024-08-01 16:03, from='Tokyo', to='New York'}
-{id=30139, departureTime=2024-07-31 08:03, from='Rome', to='Berlin'}
-{id=30239, departureTime=2024-07-31 08:03, from='Berlin', to='New York'}
-{id=46724, departureTime=2024-08-01 13:03, from='Paris', to='Rome'}
-{id=85012, departureTime=2024-08-01 21:03, from='Paris', to='New York'}
-{id=40650, departureTime=2024-07-31 04:03, from='Rome', to='Rome'}
-{id=37157, departureTime=2024-07-31 13:03, from='Tokyo', to='Rome'}
-{id=31817, departureTime=2024-08-01 02:03, from='Kyiv', to='London'}
-{id=83966, departureTime=2024-08-01 04:03, from='Berlin', to='Tokyo'}
-{id=55423, departureTime=2024-07-31 03:03, from='Tokyo', to='Kyiv'}
-{id=76557, departureTime=2024-08-01 06:03, from='Berlin', to='New York'}
-{id=69332, departureTime=2024-07-31 13:03, from='Paris', to='New York'}
-{id=59711, departureTime=2024-08-01 04:03, from='Berlin', to='Paris'}
-{id=67746, departureTime=2024-07-31 23:03, from='Berlin', to='Rome'}
-{id=60632, departureTime=2024-07-31 03:03, from='Rome', to='Tokyo'}
-{id=90212, departureTime=2024-07-31 08:03, from='New York', to='Berlin'}
-{id=23607, departureTime=2024-07-31 16:03, from='Rome', to='Kyiv'}
-{id=55245, departureTime=2024-08-01 16:03, from='Tokyo', to='Rome'}
-{id=86406, departureTime=2024-07-31 05:03, from='Berlin', to='Kyiv'}
+id = 84153, departureTime = 2024-08-01 15:52, from = Tokyo, to = Rome, freeSeats = 100
+id = 95854, departureTime = 2024-08-01 05:52, from = London, to = Rome, freeSeats = 100
+id = 46988, departureTime = 2024-07-31 19:52, from = Berlin, to = Berlin, freeSeats = 100
+id = 65887, departureTime = 2024-07-31 22:52, from = Kyiv, to = Berlin, freeSeats = 100
+id = 89247, departureTime = 2024-08-01 22:52, from = Berlin, to = New York, freeSeats = 100
+id = 52753, departureTime = 2024-08-01 14:52, from = Tokyo, to = Paris, freeSeats = 100
+id = 92438, departureTime = 2024-08-01 03:52, from = New York, to = Paris, freeSeats = 100
+id = 60261, departureTime = 2024-08-02 17:52, from = Paris, to = Tokyo, freeSeats = 100
+id = 15608, departureTime = 2024-08-01 05:52, from = Paris, to = Paris, freeSeats = 100
+id = 59404, departureTime = 2024-08-01 22:52, from = London, to = Tokyo, freeSeats = 100
+id = 11148, departureTime = 2024-08-02 13:52, from = New York, to = Tokyo, freeSeats = 100
+id = 81274, departureTime = 2024-08-02 04:52, from = Kyiv, to = Kyiv, freeSeats = 100
+id = 22160, departureTime = 2024-08-01 18:52, from = New York, to = Kyiv, freeSeats = 100
+id = 25627, departureTime = 2024-08-01 05:52, from = Berlin, to = New York, freeSeats = 100
+id = 51846, departureTime = 2024-08-02 17:52, from = Tokyo, to = Tokyo, freeSeats = 100
+id = 64424, departureTime = 2024-08-02 07:52, from = Rome, to = Berlin, freeSeats = 100
+id = 51394, departureTime = 2024-08-02 12:52, from = New York, to = London, freeSeats = 100
+id = 46294, departureTime = 2024-08-01 02:52, from = Rome, to = Berlin, freeSeats = 100
+id = 37949, departureTime = 2024-07-31 20:52, from = Rome, to = Rome, freeSeats = 100
+id = 61931, departureTime = 2024-08-02 02:52, from = Berlin, to = New York, freeSeats = 100
+id = 44239, departureTime = 2024-07-31 19:52, from = London, to = Kyiv, freeSeats = 100
+id = 95907, departureTime = 2024-07-31 21:52, from = Tokyo, to = Kyiv, freeSeats = 100
+id = 50568, departureTime = 2024-08-02 02:52, from = Rome, to = Rome, freeSeats = 100
+id = 40222, departureTime = 2024-08-01 00:52, from = New York, to = Rome, freeSeats = 100
+id = 66286, departureTime = 2024-08-01 16:52, from = New York, to = Berlin, freeSeats = 100
+id = 92540, departureTime = 2024-07-31 20:52, from = Kyiv, to = Kyiv, freeSeats = 100
+id = 63021, departureTime = 2024-08-01 19:52, from = London, to = Berlin, freeSeats = 100
+id = 79885, departureTime = 2024-07-31 23:52, from = Kyiv, to = Tokyo, freeSeats = 100
+id = 34239, departureTime = 2024-08-01 03:52, from = New York, to = Kyiv, freeSeats = 100
+id = 83419, departureTime = 2024-08-02 05:52, from = London, to = Rome, freeSeats = 100
+id = 98122, departureTime = 2024-08-01 02:52, from = Berlin, to = London, freeSeats = 100
+id = 22187, departureTime = 2024-07-31 22:52, from = Tokyo, to = Kyiv, freeSeats = 100
+id = 74969, departureTime = 2024-08-02 04:52, from = Kyiv, to = Paris, freeSeats = 100
+id = 33114, departureTime = 2024-07-31 23:52, from = Tokyo, to = New York, freeSeats = 100
+id = 94440, departureTime = 2024-08-01 01:52, from = Paris, to = Kyiv, freeSeats = 100
+id = 22593, departureTime = 2024-08-01 10:52, from = Rome, to = Paris, freeSeats = 100
+id = 15678, departureTime = 2024-08-01 00:52, from = London, to = Paris, freeSeats = 100
+id = 80196, departureTime = 2024-08-01 21:52, from = Rome, to = Paris, freeSeats = 100
+id = 16844, departureTime = 2024-08-02 09:52, from = Rome, to = Berlin, freeSeats = 100
+id = 65668, departureTime = 2024-08-01 05:52, from = Kyiv, to = New York, freeSeats = 100
+id = 67792, departureTime = 2024-08-01 12:52, from = Tokyo, to = London, freeSeats = 100
+id = 53585, departureTime = 2024-08-02 08:52, from = Rome, to = Berlin, freeSeats = 100
+id = 54416, departureTime = 2024-07-31 22:52, from = Tokyo, to = London, freeSeats = 100
+id = 52838, departureTime = 2024-08-02 13:52, from = Kyiv, to = London, freeSeats = 100
+id = 17857, departureTime = 2024-08-01 08:52, from = Tokyo, to = Rome, freeSeats = 100
+id = 32584, departureTime = 2024-08-01 00:52, from = London, to = New York, freeSeats = 100
+id = 72838, departureTime = 2024-08-01 08:52, from = London, to = Berlin, freeSeats = 100
+id = 19013, departureTime = 2024-08-01 14:52, from = Tokyo, to = New York, freeSeats = 100
+id = 34988, departureTime = 2024-08-02 02:52, from = Berlin, to = Berlin, freeSeats = 100
+id = 99436, departureTime = 2024-08-01 15:52, from = Kyiv, to = Tokyo, freeSeats = 100
+id = 90179, departureTime = 2024-08-01 04:52, from = Rome, to = Tokyo, freeSeats = 100
+id = 90809, departureTime = 2024-08-01 04:52, from = Tokyo, to = London, freeSeats = 100
+id = 15558, departureTime = 2024-08-02 11:52, from = Paris, to = Tokyo, freeSeats = 100
+id = 49627, departureTime = 2024-08-02 10:52, from = Tokyo, to = Rome, freeSeats = 100
+id = 12156, departureTime = 2024-08-01 10:52, from = Berlin, to = Tokyo, freeSeats = 100
+id = 97785, departureTime = 2024-08-02 16:52, from = Paris, to = Berlin, freeSeats = 100
+id = 30865, departureTime = 2024-07-31 22:52, from = Paris, to = Kyiv, freeSeats = 100
+id = 13326, departureTime = 2024-08-02 13:52, from = Kyiv, to = Berlin, freeSeats = 100
+id = 60735, departureTime = 2024-08-02 08:52, from = London, to = Kyiv, freeSeats = 100
+id = 12746, departureTime = 2024-08-01 21:52, from = Paris, to = New York, freeSeats = 100
+id = 98691, departureTime = 2024-08-01 12:52, from = London, to = Rome, freeSeats = 100
+id = 24503, departureTime = 2024-07-31 18:52, from = Kyiv, to = New York, freeSeats = 100
+id = 46671, departureTime = 2024-07-31 20:52, from = Berlin, to = Rome, freeSeats = 100
+id = 41065, departureTime = 2024-08-01 15:52, from = New York, to = Paris, freeSeats = 100
+id = 81993, departureTime = 2024-08-01 21:52, from = Tokyo, to = Kyiv, freeSeats = 100
+id = 37017, departureTime = 2024-08-02 14:52, from = Tokyo, to = Rome, freeSeats = 100
+id = 60976, departureTime = 2024-08-01 15:52, from = Berlin, to = New York, freeSeats = 100
+id = 96345, departureTime = 2024-08-02 08:52, from = Rome, to = Tokyo, freeSeats = 100
+id = 18416, departureTime = 2024-08-02 09:52, from = Berlin, to = Kyiv, freeSeats = 100
+id = 94002, departureTime = 2024-08-01 16:52, from = London, to = Berlin, freeSeats = 100
+id = 92791, departureTime = 2024-08-01 05:52, from = New York, to = Tokyo, freeSeats = 100
+id = 77499, departureTime = 2024-08-01 08:52, from = Rome, to = Berlin, freeSeats = 100
+id = 28318, departureTime = 2024-07-31 20:52, from = Tokyo, to = Paris, freeSeats = 100
+id = 29757, departureTime = 2024-08-02 07:52, from = Berlin, to = Tokyo, freeSeats = 100
+id = 90848, departureTime = 2024-08-02 10:52, from = Kyiv, to = Rome, freeSeats = 100
+id = 56952, departureTime = 2024-08-02 16:52, from = Tokyo, to = Tokyo, freeSeats = 100
+id = 60939, departureTime = 2024-08-02 06:52, from = Berlin, to = London, freeSeats = 100
+id = 80427, departureTime = 2024-08-02 14:52, from = New York, to = Rome, freeSeats = 100
+id = 40419, departureTime = 2024-08-02 07:52, from = Paris, to = Tokyo, freeSeats = 100
+id = 84677, departureTime = 2024-08-02 09:52, from = Rome, to = Rome, freeSeats = 100
+id = 81260, departureTime = 2024-08-02 10:52, from = Paris, to = Berlin, freeSeats = 100
+id = 86253, departureTime = 2024-08-01 07:52, from = Tokyo, to = Tokyo, freeSeats = 100
+id = 55595, departureTime = 2024-08-01 11:52, from = Paris, to = Rome, freeSeats = 100
+id = 19918, departureTime = 2024-08-01 07:52, from = New York, to = New York, freeSeats = 100
+id = 58445, departureTime = 2024-08-01 23:52, from = Rome, to = Paris, freeSeats = 100
+id = 12401, departureTime = 2024-08-02 17:52, from = Paris, to = Rome, freeSeats = 100
+id = 77836, departureTime = 2024-08-01 21:52, from = Tokyo, to = Berlin, freeSeats = 100
+id = 61245, departureTime = 2024-08-02 13:52, from = Rome, to = New York, freeSeats = 100
+id = 63913, departureTime = 2024-07-31 18:52, from = Paris, to = Kyiv, freeSeats = 100
+id = 38937, departureTime = 2024-08-02 08:52, from = London, to = Paris, freeSeats = 100
+id = 24112, departureTime = 2024-08-02 06:52, from = Kyiv, to = Tokyo, freeSeats = 100
+id = 53241, departureTime = 2024-08-01 19:52, from = London, to = Rome, freeSeats = 100
+id = 17404, departureTime = 2024-08-02 04:52, from = Kyiv, to = Paris, freeSeats = 100
+id = 81697, departureTime = 2024-08-02 08:52, from = Paris, to = Tokyo, freeSeats = 100
+id = 21814, departureTime = 2024-08-01 04:52, from = New York, to = Rome, freeSeats = 100
+id = 81666, departureTime = 2024-08-01 04:52, from = Rome, to = Paris, freeSeats = 100
+id = 84323, departureTime = 2024-08-01 07:52, from = Tokyo, to = Kyiv, freeSeats = 100
+id = 15158, departureTime = 2024-08-01 21:52, from = London, to = Paris, freeSeats = 100
+id = 49740, departureTime = 2024-08-01 02:52, from = Berlin, to = Tokyo, freeSeats = 100
+id = 23501, departureTime = 2024-08-01 14:52, from = Kyiv, to = Paris, freeSeats = 100
