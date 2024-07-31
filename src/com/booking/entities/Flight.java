@@ -1,4 +1,4 @@
-package Flight.service;
+package com.booking.entities;
 
 import java.io.Serializable;
 
@@ -7,12 +7,14 @@ public class Flight implements Serializable {
     private String destination;
     private String departure;
     private String departureTime;
+    private int seatsFree;
 
-    public Flight(int id, String destination, String departure, String departureTime) {
+    public Flight(int id, String destination, String departure, String departureTime, int seatsFree) {
         this.id = id;
         this.departure = departure;
         this.destination = destination;
         this.departureTime = departureTime;
+        this.seatsFree = seatsFree;
     }
 
     public int getId() {
@@ -43,8 +45,16 @@ public class Flight implements Serializable {
         this.departureTime = departureTime;
     }
 
+    public int getSeatsFree() {
+        return seatsFree;
+    }
+
+    public void setSeatsFree(int seatsFree) {
+        this.seatsFree = seatsFree;
+    }
+
     @Override
     public String toString() {
-        return "Flight{id=" + id + ", destination='" + destination + "', departureTime='" + departureTime + "'}";
+        return "Flight{id=" + id + ", destination='" + destination + "', departureTime='" + departureTime + "', freeSeats='" + seatsFree + "'}";
     }
 }
