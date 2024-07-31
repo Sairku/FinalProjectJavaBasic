@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 
 public class UserAuthentication {
 
-    private static final String FILE_PATH = Paths.get("src", "com", "db", "users.dat").toString();
+    private static final String FILE_PATH = Paths.get("Files", "users.dat").toString();
 
     public boolean chooseAuthenticationOption(Scanner scanner) {
         String choice;

@@ -1,15 +1,16 @@
 package com.consoleMenu;
 
 import com.authentication.UserAuthentication;
-import com.exeption.MainMenuExeption;
-import com.utils.GeneratorFlightDatabase;
+import com.authorization.User;
+import com.exception.MainMenuExeption;
+import com.informationForFlight.GeneratorFlightDatabase;
 
 import java.util.Scanner;
 
 public class ConsoleMenu {
 
     private UserAuthentication userAuthentication = new UserAuthentication();
-    private String currentUser;
+    private User currentUser;
 
     public void runMenu() {
         Scanner scanner = new Scanner(System.in);

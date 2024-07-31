@@ -1,5 +1,4 @@
-package com.utils;
-import com.informationForFlight.OnlineScoreboard;
+package com.informationForFlight;
 
 import java.io.*;
 import java.nio.file.Paths;
@@ -21,7 +20,7 @@ public class GeneratorFlightDatabase {
         String departureTime = LocalDateTime.now().plusHours(random.nextInt(48)).format(FORMATTER);
         flights.add(new OnlineScoreboard( destinationFrom, destinationTo, departureTime));
     }
-        String filePath = Paths.get("src","com", "db", "flights.txt").toString();
+        String filePath = Paths.get("files","flights.txt").toString();
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, java.nio.charset.StandardCharsets.UTF_8))) {
             for (OnlineScoreboard flight : flights) {
                 writer.write(flight.toString());
@@ -33,7 +32,7 @@ public class GeneratorFlightDatabase {
     }
 
     public  void getCurrentFlights() {
-        String filePath = Paths.get("src","com", "db", "flights.txt").toString();
+        String filePath = Paths.get("files","flights.txt").toString();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
         LocalDateTime currentDateTime = LocalDateTime.now();
         LocalDateTime dateTimePlus24Hours = currentDateTime.plusHours(24);
@@ -55,7 +54,7 @@ public class GeneratorFlightDatabase {
         }
     }
     public  void getFlightsById(String flightId) {
-        String filePath = Paths.get("src","com", "db", "flights.txt").toString();
+        String filePath = Paths.get("files","flights.txt").toString();
         List<String> flights = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath, java.nio.charset.StandardCharsets.UTF_8))) {
