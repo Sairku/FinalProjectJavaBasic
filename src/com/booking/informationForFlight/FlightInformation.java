@@ -1,4 +1,4 @@
-package com.informationForFlight;
+package com.booking.informationForFlight;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;

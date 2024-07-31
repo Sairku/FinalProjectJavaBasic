@@ -85,11 +85,11 @@ public class BookingController {
             System.out.print("Last name: ");
             String surname = input.nextLine();
 
-            User user = userService.findByData(name, surname);
+            User user = userService.getUserByName(name, surname);
 
-            if (user == null) {
-                user = userService.create(name, surname);
-            }
+//            if (user == null) {
+//                user = userService.create(name, surname);
+//            }
 
             users.add(user.getId());
         }
@@ -125,7 +125,7 @@ public class BookingController {
         System.out.print("Please enter last name: ");
         String surname = input.nextLine();
 
-        User user = userService.findByData(name, surname);
+        User user = userService.getUserByName(name, surname);
 
         if (user == null) {
             System.out.println("There is no such user!");
@@ -142,7 +142,7 @@ public class BookingController {
                 System.out.printf(
                         "Booking [%d]: %s \n", 
                         booking.getId(),
-                        flightService.getById(booking.getFlightId()).toString()
+                        flightService.get(booking.getFlightId()).toString()
                 );
             }
         }

@@ -1,4 +1,4 @@
-package Flight.Dao;
+package com.booking.dao;
 
 import java.util.List;
 

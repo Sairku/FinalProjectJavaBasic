@@ -1,21 +1,27 @@
-package com.consoleMenu;
+package com.booking.consoleMenu;
 
-import com.authentication.UserAuthentication;
-import com.authorization.User;
-import com.exception.MainMenuExeption;
-import com.informationForFlight.GeneratorFlightDatabase;
+import com.booking.controller.BookingController;
+import com.booking.controller.FlightController;
+import com.booking.controller.UserController;
+import com.booking.entities.User;
+import com.booking.exception.MainMenuExeption;
+import com.booking.informationForFlight.GeneratorFlightDatabase;
 
 import java.util.Scanner;
 
 public class ConsoleMenu {
+    private UserController userController = new UserController();
+    private BookingController bookingController = new BookingController();
+    private FlightController flightController = new FlightController();
 
-    private UserAuthentication userAuthentication = new UserAuthentication();
-    private User currentUser;
+    private User currentUser = null;
 
     public void runMenu() {
         Scanner scanner = new Scanner(System.in);
 
-        if (!userAuthentication.chooseAuthenticationOption(scanner)) {
+        currentUser = userController.chooseAuthenticationOption(scanner);
+
+        if (currentUser == null) {
             System.out.println("Exiting...");
             return;
         }
@@ -30,6 +36,8 @@ public class ConsoleMenu {
         String flightId;
         GeneratorFlightDatabase listTablo = new GeneratorFlightDatabase();
         listTablo.GeneratorFlight();
+
+        userController.readUsersFromFile();
 
         do {
             displayMenu();
@@ -57,15 +65,13 @@ public class ConsoleMenu {
                         break;
                     case "6":
                         System.out.println("Logging out...");
-                        if (userAuthentication.chooseAuthenticationOption(scanner)) {
-                            mainMenu(scanner);
-                        } else {
-                            command = "exit";
-                        }
+                        command = "exit";
+                        userController.saveUsersToFile();
                         break;
                     case "7":
                         System.out.println("Exiting...");
                         command = "exit";
+                        userController.saveUsersToFile();
                         break;
                     default:
                         throw new MainMenuExeption("Invalid command: " + command + ". Please try again.");

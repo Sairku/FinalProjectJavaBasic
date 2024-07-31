@@ -1,6 +1,6 @@
-package com;
+package com.booking;
 
-import com.consoleMenu.ConsoleMenu;
+import com.booking.consoleMenu.ConsoleMenu;
 
 public class Main {
     public static void main(String[] args) {
