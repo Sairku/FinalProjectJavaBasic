@@ -132,7 +132,7 @@ public class FlightController {
     }
 
     // Метод для записи данных в файл
-    private void saveDataToFile() {
+    public void saveDataToFile() {
         FlightService flightService = new FlightService();
 
         List<Flight> flights = flightService.getAll();

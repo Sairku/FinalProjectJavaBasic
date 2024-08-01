@@ -61,6 +61,7 @@ public class BookingService {
 
     public void deleteBooking(Booking booking) throws NotFoundData {
         Flight flight = flightDao.get(booking.getFlightId());
+
         int curFreeSeats = flight.getSeatsFree();
         int bookSeats = booking.getUsers().size();
 

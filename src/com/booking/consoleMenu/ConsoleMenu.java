@@ -38,6 +38,8 @@ public class ConsoleMenu {
         listTablo.GeneratorFlight();
 
         userController.readUsersFromFile();
+        flightController.loadDataFromFile();
+        bookingController.readDataFromFile();
 
         do {
             displayMenu();
@@ -55,23 +57,27 @@ public class ConsoleMenu {
                         listTablo.getFlightsById(flightId);
                         break;
                     case "3":
-                        System.out.println("flight");
+                        bookingController.bookFlight(currentUser.getId());
                         break;
                     case "4":
-                        System.out.println("reservation");
+                        bookingController.deleteBooking();
                         break;
                     case "5":
-                        System.out.println("My flights");
+                        bookingController.findBookings();
                         break;
                     case "6":
                         System.out.println("Logging out...");
                         command = "exit";
                         userController.saveUsersToFile();
+                        flightController.saveDataToFile();
+                        bookingController.saveDataToFile();
                         break;
                     case "7":
                         System.out.println("Exiting...");
                         command = "exit";
                         userController.saveUsersToFile();
+                        flightController.saveDataToFile();
+                        bookingController.saveDataToFile();
                         break;
                     default:
                         throw new MainMenuExeption("Invalid command: " + command + ". Please try again.");
