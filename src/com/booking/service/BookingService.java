@@ -19,6 +19,10 @@ public class BookingService {
     }
 
     public Booking create(Flight flight, int userId, List<Integer> users) throws NotFoundData {
+        if (flight == null || flightDao.get(flight.getId()) == null) {
+            throw new NotFoundData("You can't make a booking. There is no such flight!");
+        }
+
         Booking newBooking = new Booking(Instant.now().toEpochMilli(), flight.getId(), userId, users);
 
         int curFreeSeats = flight.getSeatsFree();
@@ -59,15 +63,24 @@ public class BookingService {
                 .toList();
     }
 
-    public void deleteBooking(Booking booking) throws NotFoundData {
+    public Booking delete(Booking booking) throws NotFoundData {
         Flight flight = flightDao.get(booking.getFlightId());
 
-        int curFreeSeats = flight.getSeatsFree();
-        int bookSeats = booking.getUsers().size();
+        if (flight != null) {
+            int curFreeSeats = flight.getSeatsFree();
+            int bookSeats = booking.getUsers().size();
 
-        flight.setSeatsFree(curFreeSeats + bookSeats);
+            flight.setSeatsFree(curFreeSeats + bookSeats);
 
-        flightDao.update(flight);
-        bookingDao.delete(booking.getId());
+            flightDao.update(flight);
+        }
+
+        Booking bookingDeleted = bookingDao.delete(booking.getId());
+
+        if (bookingDeleted == null) {
+            throw new NotFoundData("There is no such booking!");
+        }
+
+        return bookingDeleted;
     }
 }

@@ -52,7 +52,7 @@ public class BookingController {
         }
     }
 
-    public void bookFlight(int userId) {
+    public Booking bookFlight(int userId) {
         System.out.print("Enter your departure city: "); // System.out.print("Введіть місто вильоту: ");
         String cityFrom = input.nextLine();
 
@@ -69,14 +69,14 @@ public class BookingController {
         Flight flight = chooseFlight(cityFrom, cityTo, date, seatsCount);
 
         if (flight == null) {
-            return;
+            return null;
         }
 
         List<Integer> users = new ArrayList<>();
 
         System.out.println("Let's enter passengers data");
 
-        for (int i = 1; i <= seatsCount; i++) {
+        for (int i = 0; i < seatsCount; i++) {
             System.out.println("Passenger " + i);
 
             System.out.print("First name: ");
@@ -95,9 +95,11 @@ public class BookingController {
         }
 
         try {
-            bookingService.create(flight, userId, users);
+            System.out.println("Your booking was created");
+            return bookingService.create(flight, userId, users);
         } catch (NotFoundData e) {
             System.out.println(e.getMessage());
+            return null;
         }
     }
 
@@ -110,7 +112,7 @@ public class BookingController {
             System.out.println("Booking " + id + " not found!");
         } else {
             try {
-                bookingService.deleteBooking(booking);
+                bookingService.delete(booking);
                 System.out.println("Booking " + id + " was deleted!");
             } catch (NotFoundData e) {
                 System.out.println(e.getMessage());
@@ -178,7 +180,7 @@ public class BookingController {
             List<Booking> bookings = bookingService.getAll();
 
             for (Booking booking : bookings) {
-                oos.writeObject(bookings);
+                oos.writeObject(booking);
             }
         } catch (IOException e) {
             e.printStackTrace();
