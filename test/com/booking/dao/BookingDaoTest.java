@@ -2,6 +2,7 @@ package com.booking.dao;
 
 import com.booking.entities.Booking;
 import com.booking.exception.NotFoundData;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.Instant;
@@ -13,65 +14,72 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class BookingDaoTest {
-    private IBookingDao<Booking, Long> bookingDao = BookingDao.getInstance();
+    private final IBookingDao<Booking, Long> bookingDao = BookingDao.getInstance();
+
+    private Booking bookingNew;
+    private final int flightId = 1;
+    private final int userId = 1;
+
+    @BeforeEach
+    public void setUp() {
+        long id = Instant.now().toEpochMilli();
+        bookingNew = new Booking(id, flightId, userId, new ArrayList<>());
+    }
 
     @Test
     public void testSave() {
-        long id = Instant.now().toEpochMilli();
-        Booking booking = new Booking(id, 1, 1, new ArrayList<>());
+        bookingDao.save(bookingNew);
 
-        bookingDao.save(booking);
+        Booking booking = bookingDao.get(bookingNew.getId());
 
-        Booking bookingSaved = bookingDao.get(id);
-
-        assertEquals(booking, bookingSaved);
+        assertEquals(bookingNew, booking);
     }
 
     @Test
     public void testGet() {
-        long id = Instant.now().toEpochMilli();
-        Booking bookingNew = new Booking(id, 1, 1, new ArrayList<>());
-
         bookingDao.save(bookingNew);
 
-        assertNotNull(bookingDao.get(id));
-        assertNull(bookingDao.get(Instant.now().toEpochMilli()));
+        // check if new booking exists
+        assertNotNull(bookingDao.get(bookingNew.getId()));
+
+        // no booking
+        assertNull(bookingDao.get(Instant.now().toEpochMilli() + 20));
     }
 
     @Test
     public void testGetAll() {
         List<Booking> expected = new ArrayList<>(bookingDao.getAll());
 
-        long id = Instant.now().toEpochMilli();
-        Booking bookingNew = new Booking(id, 1, 1, new ArrayList<>());
-
         expected.add(bookingNew);
+        // sort for assertEquals, because na order may be different
         expected.sort(Comparator.comparingLong(Booking::getId));
 
         bookingDao.save(bookingNew);
         List<Booking> actual = new ArrayList<>(bookingDao.getAll());
-        actual.sort(Comparator.comparingLong(Booking::getId));
+        actual.sort(Comparator.comparingLong(Booking::getId)); // the same
 
         assertEquals(expected, actual);
     }
 
     @Test
     public void testUpdate() {
-        long id = Instant.now().toEpochMilli();
-        Booking expected = new Booking(id, 1, 1, new ArrayList<>());
+        Booking expected = bookingNew;
 
         bookingDao.save(expected);
         expected.setUserId(2);
 
+        // check and update an existing booking
         assertDoesNotThrow(() -> {
             bookingDao.update(expected);
         });
 
-        Booking actual = bookingDao.get(id);
+        Booking actual = bookingDao.get(expected.getId());
         assertEquals(expected, actual);
 
+
+        // check updating of non-existing booking
         assertThrows(NotFoundData.class, () -> {
-            Booking bookingNew = new Booking(Instant.now().toEpochMilli(), 1, 1, new ArrayList<>());
+            Booking bookingNew = new Booking(Instant.now().toEpochMilli() + 20, flightId, userId, new ArrayList<>());
 
             bookingDao.update(bookingNew);
         });
@@ -79,13 +87,10 @@ public class BookingDaoTest {
 
     @Test
     public void testDelete() {
-        long id = Instant.now().toEpochMilli();
-        Booking booking = new Booking(id, 1, 1, new ArrayList<>());
-
-        bookingDao.save(booking);
+        bookingDao.save(bookingNew);
         int expected = bookingDao.getAll().size() - 1;
 
-        bookingDao.delete(id);
+        bookingDao.delete(bookingNew.getId());
         int actual = bookingDao.getAll().size();
 
         assertEquals(expected, actual);

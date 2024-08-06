@@ -8,10 +8,10 @@ public class Booking implements Serializable {
 
     private long id;
     private int flightId;
-    private long userId; // who booked
+    private int userId; // who booked
     private List<Integer> users;
 
-    public Booking(long id, int flightId, long userId, List<Integer> users) {
+    public Booking(long id, int flightId, int userId, List<Integer> users) {
         this.id = id;
         this.flightId = flightId;
         this.userId = userId;
@@ -34,11 +34,11 @@ public class Booking implements Serializable {
         this.flightId = flightId;
     }
 
-    public long getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(long userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
