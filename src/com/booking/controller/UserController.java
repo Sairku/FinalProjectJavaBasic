@@ -8,10 +8,11 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.logging.SocketHandler;
 import java.util.regex.Pattern;
 
 public class UserController {
-    private static final String FILE_PATH = Paths.get("Files", "users.dat").toString();
+    private static final String FILE_PATH = "files/users.dat";
     private UserService userService = new UserService();
 
     public User chooseAuthenticationOption(Scanner scanner) {
@@ -29,6 +30,8 @@ public class UserController {
             switch (choice) {
                 case "1":
                     user = authenticateUser(scanner);
+                    if (user != null)
+                        return user;
                     break;
                 case "2":
                     user = createUser(scanner);
@@ -39,15 +42,13 @@ public class UserController {
                     }
                     break;
                 case "3":
-                    // System.out.println("Exiting...");
-                    return user;
+                    System.out.println("Exit");
+                    System.exit(0);
                 default:
                     System.out.println("Invalid choice. Please try again.");
+                    break;
             }
-        } while (!choice.equals("3"));
-
-        System.out.println("You have exited the program.");
-        return user;
+        } while (true);
     }
 
     public User authenticateUser(Scanner scanner) {
@@ -90,7 +91,7 @@ public class UserController {
         }
 
 
-        return false;
+        return true;
     }
 
     private boolean isValidEmail(String email) {
@@ -98,14 +99,16 @@ public class UserController {
     }
 
     public void readUsersFromFile() {
-        List<User> users = new ArrayList<>();
 
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(FILE_PATH))) {
-            users = (List<User>) ois.readObject();
+            List<User> users = (List<User>) ois.readObject();
+            System.out.println(users);
             userService.fillUsers(users);
+
         } catch (FileNotFoundException e) {
             System.out.println("User file not found. A new one will be created.");
-        } catch (IOException | ClassNotFoundException e) {
+        } catch (EOFException e) { } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
             System.out.println("Error reading user file: " + e.getMessage());
         }
 
@@ -151,9 +154,11 @@ public class UserController {
             return null;
         }
 
-        User user = new User(id, name, surname, email, password);
+//        User user = new User(id, name, surname, email, password);
+//
+//        userService.save(user);
+//        return user;
 
-        userService.save(user);
-        return user;
+        return userService.createUser(name, surname, email, password);
     }
 }
