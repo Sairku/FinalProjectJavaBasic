@@ -18,7 +18,7 @@ public class ConsoleMenu {
 
     public void runMenu() {
         Scanner scanner = new Scanner(System.in);
-
+        userController.readUsersFromFile();
         currentUser = userController.chooseAuthenticationOption(scanner);
 
         if (currentUser == null) {
@@ -37,7 +37,7 @@ public class ConsoleMenu {
         GeneratorFlightDatabase listTablo = new GeneratorFlightDatabase();
         listTablo.GeneratorFlight();
 
-        userController.readUsersFromFile();
+
         flightController.loadDataFromFile();
         bookingController.readDataFromFile();
 

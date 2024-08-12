@@ -47,4 +47,28 @@ public class UserService {
     public void save(User user) {
         userDao.save(user);
     }
+    private int generateNewUserId() {
+
+        UserService userService = new UserService();
+        List<User> users = userService.getUsers();
+        return users.stream().mapToInt(User::getId).max().orElse(0) + 1;
+    }
+
+    public User createUser(String name, String surname, String email, String password) {
+        int id = generateNewUserId();
+
+        User user = new User(id, name, surname, email, password);
+
+        userDao.save(user);
+        return user;
+    }
+
+    public User createUser(String name, String surname) {
+        int id = generateNewUserId();
+
+        User user = new User(id, name, surname);
+
+        userDao.save(user);
+        return user;
+    }
 }
