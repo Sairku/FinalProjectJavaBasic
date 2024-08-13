@@ -3,7 +3,6 @@ package com.booking.dao;
 import com.booking.entities.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class UserDaoTest {
@@ -12,16 +11,15 @@ public class UserDaoTest {
 
     @BeforeEach
     public void setUp() {
-        userDao = new UserDao();
-        // Можна підключити до тестової бази даних або використовувати in-memory базу
+        userDao =  UserDao.getInstance();
     }
 
     @Test
-    public void testAddUser() {
+    public void testSaveUser() {
         User user = new User(1, "John", "Doe", "john.doe@example.com", "password123");
-        userDao.addUser(user);
+        userDao.save(user);
 
-        User result = userDao.getUserById(1);
-        assertEquals("John", result.getName());
+        User result = userDao.get(1);
+        assertEquals(user, result);
     }
 }

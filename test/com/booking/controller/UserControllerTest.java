@@ -1,31 +1,33 @@
 package com.booking.controller;
 
-import com.booking.entities.User;
-import com.booking.service.UserService;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
 
 public class UserControllerTest {
 
-    private UserController userController;
-    private UserService userService;
+    private UserController userController = new UserController();
 
-    @BeforeEach
-    public void setUp() {
-        userService = mock(UserService.class);
-        userController = new UserController(userService);
+    @Test
+    public void testInvalidateEmail() {
+        String email = "john.doeexample.com";
+        String password = "12345678";
+
+        assertFalse(userController.validateCredentials(email, password));
     }
 
     @Test
-    public void testGetUser() {
-        User user = new User(1, "John", "Doe", "john.doe@example.com", "password123");
-        when(userService.getUserById(1)).thenReturn(user);
+    public void testInvalidatePassword() {
+        String email = "john.doee@xample.com";
+        String password = "12345";
 
-        User result = userController.getUser(1);
-        assertEquals(1, result.getId());
-        assertEquals("John", result.getName());
+        assertFalse(userController.validateCredentials(email, password));
+    }
+
+    @Test
+    public void testValidateCredentials() {
+        String email = "john.doee@xample.com";
+        String password = "12345678";
+
+        assertTrue(userController.validateCredentials(email, password));
     }
 }
