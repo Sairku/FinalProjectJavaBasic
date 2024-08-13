@@ -12,7 +12,7 @@ public class Input {
 
         while (true) {
             try {
-                System.out.println(msg);
+                System.out.print(msg);
                 String dateStr = input.nextLine();
                 date = LocalDate.parse(dateStr, dateFormat);
 

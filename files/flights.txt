@@ -1,100 +1,100 @@
-id = 63602, departureTime = 2024-08-12 21:12, from = Kyiv, to = Tokyo, freeSeats = 100
-id = 74885, departureTime = 2024-08-14 14:12, from = New York, to = Berlin, freeSeats = 100
-id = 15875, departureTime = 2024-08-13 04:12, from = Rome, to = Kyiv, freeSeats = 100
-id = 77540, departureTime = 2024-08-14 09:12, from = Kyiv, to = New York, freeSeats = 100
-id = 77220, departureTime = 2024-08-13 07:12, from = New York, to = New York, freeSeats = 100
-id = 80132, departureTime = 2024-08-13 00:12, from = Kyiv, to = Paris, freeSeats = 100
-id = 83233, departureTime = 2024-08-13 00:12, from = Paris, to = Tokyo, freeSeats = 100
-id = 14914, departureTime = 2024-08-13 01:12, from = Tokyo, to = London, freeSeats = 100
-id = 83393, departureTime = 2024-08-14 15:12, from = London, to = Kyiv, freeSeats = 100
-id = 10639, departureTime = 2024-08-13 23:12, from = Berlin, to = Berlin, freeSeats = 100
-id = 86212, departureTime = 2024-08-13 05:12, from = Berlin, to = New York, freeSeats = 100
-id = 13662, departureTime = 2024-08-13 13:12, from = New York, to = Berlin, freeSeats = 100
-id = 13232, departureTime = 2024-08-13 20:12, from = Berlin, to = Tokyo, freeSeats = 100
-id = 16266, departureTime = 2024-08-13 13:12, from = Tokyo, to = Berlin, freeSeats = 100
-id = 50749, departureTime = 2024-08-13 05:12, from = Tokyo, to = Rome, freeSeats = 100
-id = 85696, departureTime = 2024-08-12 22:12, from = New York, to = London, freeSeats = 100
-id = 95586, departureTime = 2024-08-12 22:12, from = Kyiv, to = Kyiv, freeSeats = 100
-id = 69394, departureTime = 2024-08-14 02:12, from = London, to = New York, freeSeats = 100
-id = 70821, departureTime = 2024-08-12 20:12, from = Kyiv, to = New York, freeSeats = 100
-id = 42429, departureTime = 2024-08-14 04:12, from = Tokyo, to = Rome, freeSeats = 100
-id = 70738, departureTime = 2024-08-13 14:12, from = Rome, to = New York, freeSeats = 100
-id = 33019, departureTime = 2024-08-13 10:12, from = Paris, to = Paris, freeSeats = 100
-id = 71455, departureTime = 2024-08-14 07:12, from = London, to = Berlin, freeSeats = 100
-id = 74955, departureTime = 2024-08-14 03:12, from = Rome, to = Paris, freeSeats = 100
-id = 58727, departureTime = 2024-08-13 03:12, from = Berlin, to = Berlin, freeSeats = 100
-id = 43489, departureTime = 2024-08-14 15:12, from = Kyiv, to = Rome, freeSeats = 100
-id = 67162, departureTime = 2024-08-13 20:12, from = Paris, to = Berlin, freeSeats = 100
-id = 10034, departureTime = 2024-08-12 21:12, from = Rome, to = Tokyo, freeSeats = 100
-id = 26356, departureTime = 2024-08-14 09:12, from = Paris, to = Berlin, freeSeats = 100
-id = 70999, departureTime = 2024-08-13 11:12, from = London, to = Berlin, freeSeats = 100
-id = 65629, departureTime = 2024-08-13 07:12, from = London, to = Kyiv, freeSeats = 100
-id = 55127, departureTime = 2024-08-13 11:12, from = Berlin, to = New York, freeSeats = 100
-id = 35805, departureTime = 2024-08-14 02:12, from = Kyiv, to = Tokyo, freeSeats = 100
-id = 48799, departureTime = 2024-08-12 22:12, from = London, to = New York, freeSeats = 100
-id = 79784, departureTime = 2024-08-14 12:12, from = Rome, to = Berlin, freeSeats = 100
-id = 17859, departureTime = 2024-08-13 09:12, from = London, to = Rome, freeSeats = 100
-id = 40242, departureTime = 2024-08-13 07:12, from = New York, to = Berlin, freeSeats = 100
-id = 22085, departureTime = 2024-08-13 00:12, from = London, to = Paris, freeSeats = 100
-id = 31156, departureTime = 2024-08-14 16:12, from = Kyiv, to = Rome, freeSeats = 100
-id = 56398, departureTime = 2024-08-12 22:12, from = Tokyo, to = Paris, freeSeats = 100
-id = 71085, departureTime = 2024-08-13 08:12, from = Rome, to = Tokyo, freeSeats = 100
-id = 89322, departureTime = 2024-08-14 18:12, from = Tokyo, to = Berlin, freeSeats = 100
-id = 71561, departureTime = 2024-08-14 02:12, from = London, to = London, freeSeats = 100
-id = 25008, departureTime = 2024-08-13 05:12, from = Rome, to = Tokyo, freeSeats = 100
-id = 77963, departureTime = 2024-08-13 15:12, from = Kyiv, to = Tokyo, freeSeats = 100
-id = 61215, departureTime = 2024-08-14 06:12, from = London, to = New York, freeSeats = 100
-id = 40695, departureTime = 2024-08-12 23:12, from = Rome, to = Paris, freeSeats = 100
-id = 38627, departureTime = 2024-08-14 03:12, from = New York, to = Berlin, freeSeats = 100
-id = 39627, departureTime = 2024-08-14 11:12, from = Berlin, to = Kyiv, freeSeats = 100
-id = 23171, departureTime = 2024-08-13 17:12, from = Kyiv, to = Paris, freeSeats = 100
-id = 74832, departureTime = 2024-08-13 02:12, from = Paris, to = Berlin, freeSeats = 100
-id = 39494, departureTime = 2024-08-13 13:12, from = Kyiv, to = Kyiv, freeSeats = 100
-id = 12473, departureTime = 2024-08-14 01:12, from = Rome, to = London, freeSeats = 100
-id = 51505, departureTime = 2024-08-14 02:12, from = London, to = Paris, freeSeats = 100
-id = 20559, departureTime = 2024-08-14 01:12, from = Paris, to = New York, freeSeats = 100
-id = 89013, departureTime = 2024-08-14 13:12, from = Tokyo, to = Rome, freeSeats = 100
-id = 42962, departureTime = 2024-08-14 14:12, from = New York, to = Rome, freeSeats = 100
-id = 84617, departureTime = 2024-08-13 01:12, from = New York, to = London, freeSeats = 100
-id = 25171, departureTime = 2024-08-14 04:12, from = Berlin, to = Rome, freeSeats = 100
-id = 94483, departureTime = 2024-08-14 17:12, from = Berlin, to = Tokyo, freeSeats = 100
-id = 87878, departureTime = 2024-08-14 16:12, from = New York, to = Rome, freeSeats = 100
-id = 28764, departureTime = 2024-08-14 05:12, from = London, to = Kyiv, freeSeats = 100
-id = 72503, departureTime = 2024-08-13 08:12, from = Paris, to = Paris, freeSeats = 100
-id = 25435, departureTime = 2024-08-14 16:12, from = Kyiv, to = Paris, freeSeats = 100
-id = 93419, departureTime = 2024-08-13 11:12, from = Tokyo, to = New York, freeSeats = 100
-id = 23201, departureTime = 2024-08-13 19:12, from = Berlin, to = Paris, freeSeats = 100
-id = 95573, departureTime = 2024-08-14 02:12, from = Tokyo, to = Paris, freeSeats = 100
-id = 24729, departureTime = 2024-08-14 02:12, from = New York, to = Rome, freeSeats = 100
-id = 97872, departureTime = 2024-08-13 15:12, from = Tokyo, to = Rome, freeSeats = 100
-id = 71607, departureTime = 2024-08-12 23:12, from = New York, to = Paris, freeSeats = 100
-id = 96326, departureTime = 2024-08-13 15:12, from = London, to = New York, freeSeats = 100
-id = 46175, departureTime = 2024-08-14 03:12, from = Tokyo, to = London, freeSeats = 100
-id = 89883, departureTime = 2024-08-12 23:12, from = London, to = Tokyo, freeSeats = 100
-id = 49289, departureTime = 2024-08-13 09:12, from = Kyiv, to = New York, freeSeats = 100
-id = 94482, departureTime = 2024-08-13 16:12, from = Rome, to = Rome, freeSeats = 100
-id = 25984, departureTime = 2024-08-13 12:12, from = Berlin, to = London, freeSeats = 100
-id = 67497, departureTime = 2024-08-14 13:12, from = Rome, to = Kyiv, freeSeats = 100
-id = 13854, departureTime = 2024-08-14 07:12, from = Berlin, to = Berlin, freeSeats = 100
-id = 81925, departureTime = 2024-08-13 02:12, from = Berlin, to = Kyiv, freeSeats = 100
-id = 81117, departureTime = 2024-08-12 23:12, from = London, to = Tokyo, freeSeats = 100
-id = 72752, departureTime = 2024-08-14 10:12, from = Kyiv, to = Tokyo, freeSeats = 100
-id = 69426, departureTime = 2024-08-13 02:12, from = Tokyo, to = New York, freeSeats = 100
-id = 63299, departureTime = 2024-08-13 03:12, from = Rome, to = Paris, freeSeats = 100
-id = 47464, departureTime = 2024-08-13 05:12, from = Rome, to = Rome, freeSeats = 100
-id = 57357, departureTime = 2024-08-14 11:12, from = Tokyo, to = Berlin, freeSeats = 100
-id = 14844, departureTime = 2024-08-13 08:12, from = Kyiv, to = Kyiv, freeSeats = 100
-id = 97508, departureTime = 2024-08-14 16:12, from = New York, to = Berlin, freeSeats = 100
-id = 81267, departureTime = 2024-08-12 21:12, from = Rome, to = New York, freeSeats = 100
-id = 94733, departureTime = 2024-08-13 21:12, from = Tokyo, to = London, freeSeats = 100
-id = 23343, departureTime = 2024-08-13 20:12, from = New York, to = London, freeSeats = 100
-id = 99907, departureTime = 2024-08-14 18:12, from = New York, to = Berlin, freeSeats = 100
-id = 45289, departureTime = 2024-08-13 19:12, from = New York, to = Tokyo, freeSeats = 100
-id = 11930, departureTime = 2024-08-13 01:12, from = New York, to = Tokyo, freeSeats = 100
-id = 66473, departureTime = 2024-08-14 04:12, from = Kyiv, to = Tokyo, freeSeats = 100
-id = 27408, departureTime = 2024-08-14 17:12, from = Kyiv, to = Kyiv, freeSeats = 100
-id = 63058, departureTime = 2024-08-14 02:12, from = Rome, to = Rome, freeSeats = 100
-id = 29698, departureTime = 2024-08-13 11:12, from = New York, to = Tokyo, freeSeats = 100
-id = 80155, departureTime = 2024-08-14 08:12, from = Paris, to = Rome, freeSeats = 100
-id = 40663, departureTime = 2024-08-14 09:12, from = Tokyo, to = London, freeSeats = 100
-id = 48505, departureTime = 2024-08-14 08:12, from = Rome, to = London, freeSeats = 100
+id = 70665, departureTime = 2024-08-13 11:50, from = Tokyo, to = Paris, freeSeats = 230
+id = 19449, departureTime = 2024-08-13 00:50, from = Tokyo, to = Kyiv, freeSeats = 230
+id = 27209, departureTime = 2024-08-13 04:50, from = New York, to = Rome, freeSeats = 230
+id = 76276, departureTime = 2024-08-13 07:50, from = Rome, to = Paris, freeSeats = 230
+id = 48794, departureTime = 2024-08-14 18:50, from = Berlin, to = Berlin, freeSeats = 230
+id = 28348, departureTime = 2024-08-13 16:50, from = Tokyo, to = Kyiv, freeSeats = 230
+id = 18933, departureTime = 2024-08-14 18:50, from = Berlin, to = Tokyo, freeSeats = 230
+id = 33986, departureTime = 2024-08-14 14:50, from = Paris, to = Kyiv, freeSeats = 230
+id = 33769, departureTime = 2024-08-13 07:50, from = New York, to = Tokyo, freeSeats = 230
+id = 90486, departureTime = 2024-08-13 01:50, from = New York, to = Kyiv, freeSeats = 230
+id = 61447, departureTime = 2024-08-14 08:50, from = Rome, to = Rome, freeSeats = 230
+id = 56250, departureTime = 2024-08-12 21:50, from = London, to = Rome, freeSeats = 230
+id = 56582, departureTime = 2024-08-14 16:50, from = New York, to = Tokyo, freeSeats = 230
+id = 16450, departureTime = 2024-08-13 12:50, from = Berlin, to = Berlin, freeSeats = 230
+id = 21605, departureTime = 2024-08-13 17:50, from = Kyiv, to = Paris, freeSeats = 230
+id = 69365, departureTime = 2024-08-13 15:50, from = Berlin, to = Paris, freeSeats = 230
+id = 50525, departureTime = 2024-08-13 02:50, from = Tokyo, to = Paris, freeSeats = 230
+id = 16735, departureTime = 2024-08-13 07:50, from = Kyiv, to = New York, freeSeats = 230
+id = 47674, departureTime = 2024-08-14 02:50, from = Berlin, to = Tokyo, freeSeats = 230
+id = 37130, departureTime = 2024-08-13 20:50, from = Paris, to = Rome, freeSeats = 230
+id = 98042, departureTime = 2024-08-13 15:50, from = London, to = Tokyo, freeSeats = 230
+id = 10634, departureTime = 2024-08-13 11:50, from = Tokyo, to = Rome, freeSeats = 230
+id = 10896, departureTime = 2024-08-13 06:50, from = Tokyo, to = New York, freeSeats = 230
+id = 27560, departureTime = 2024-08-14 16:50, from = London, to = Rome, freeSeats = 230
+id = 74357, departureTime = 2024-08-13 03:50, from = Kyiv, to = Berlin, freeSeats = 230
+id = 61398, departureTime = 2024-08-14 04:50, from = New York, to = New York, freeSeats = 230
+id = 27252, departureTime = 2024-08-13 18:50, from = Berlin, to = Rome, freeSeats = 230
+id = 92855, departureTime = 2024-08-13 06:50, from = Kyiv, to = London, freeSeats = 230
+id = 13438, departureTime = 2024-08-13 21:50, from = London, to = Kyiv, freeSeats = 230
+id = 35312, departureTime = 2024-08-14 04:50, from = Paris, to = New York, freeSeats = 230
+id = 98887, departureTime = 2024-08-13 18:50, from = Berlin, to = New York, freeSeats = 230
+id = 72425, departureTime = 2024-08-14 15:50, from = Rome, to = Kyiv, freeSeats = 230
+id = 15521, departureTime = 2024-08-13 18:50, from = Kyiv, to = Tokyo, freeSeats = 230
+id = 98229, departureTime = 2024-08-14 13:50, from = New York, to = London, freeSeats = 230
+id = 56660, departureTime = 2024-08-13 11:50, from = Berlin, to = Paris, freeSeats = 230
+id = 14376, departureTime = 2024-08-13 17:50, from = New York, to = Paris, freeSeats = 230
+id = 45988, departureTime = 2024-08-14 12:50, from = Tokyo, to = Berlin, freeSeats = 230
+id = 35791, departureTime = 2024-08-14 01:50, from = Tokyo, to = New York, freeSeats = 230
+id = 65528, departureTime = 2024-08-14 11:50, from = Paris, to = New York, freeSeats = 230
+id = 86920, departureTime = 2024-08-13 23:50, from = Kyiv, to = Rome, freeSeats = 230
+id = 76914, departureTime = 2024-08-14 17:50, from = Rome, to = Tokyo, freeSeats = 230
+id = 68598, departureTime = 2024-08-13 00:50, from = Tokyo, to = Tokyo, freeSeats = 230
+id = 31704, departureTime = 2024-08-14 03:50, from = London, to = Paris, freeSeats = 230
+id = 52460, departureTime = 2024-08-13 18:50, from = London, to = Tokyo, freeSeats = 230
+id = 45931, departureTime = 2024-08-13 08:50, from = Kyiv, to = Tokyo, freeSeats = 230
+id = 35531, departureTime = 2024-08-13 05:50, from = Paris, to = New York, freeSeats = 230
+id = 43393, departureTime = 2024-08-13 06:50, from = Kyiv, to = Paris, freeSeats = 230
+id = 60741, departureTime = 2024-08-13 19:50, from = Rome, to = Berlin, freeSeats = 230
+id = 17543, departureTime = 2024-08-14 14:50, from = Kyiv, to = London, freeSeats = 230
+id = 28032, departureTime = 2024-08-13 22:50, from = Berlin, to = Rome, freeSeats = 230
+id = 70235, departureTime = 2024-08-14 17:50, from = Tokyo, to = Berlin, freeSeats = 230
+id = 85068, departureTime = 2024-08-13 13:50, from = New York, to = Rome, freeSeats = 230
+id = 98176, departureTime = 2024-08-13 14:50, from = Kyiv, to = New York, freeSeats = 230
+id = 31949, departureTime = 2024-08-13 14:50, from = Berlin, to = Berlin, freeSeats = 230
+id = 20200, departureTime = 2024-08-14 18:50, from = New York, to = Rome, freeSeats = 230
+id = 52788, departureTime = 2024-08-13 10:50, from = Berlin, to = London, freeSeats = 230
+id = 18233, departureTime = 2024-08-13 23:50, from = New York, to = New York, freeSeats = 230
+id = 46499, departureTime = 2024-08-13 08:50, from = Kyiv, to = Paris, freeSeats = 230
+id = 27520, departureTime = 2024-08-12 23:50, from = Kyiv, to = Paris, freeSeats = 230
+id = 86709, departureTime = 2024-08-13 02:50, from = London, to = Kyiv, freeSeats = 230
+id = 67669, departureTime = 2024-08-14 15:50, from = Tokyo, to = Berlin, freeSeats = 230
+id = 51146, departureTime = 2024-08-14 02:50, from = Berlin, to = New York, freeSeats = 230
+id = 90432, departureTime = 2024-08-14 12:50, from = Berlin, to = Rome, freeSeats = 230
+id = 77361, departureTime = 2024-08-14 02:50, from = Paris, to = New York, freeSeats = 230
+id = 94044, departureTime = 2024-08-14 04:50, from = Rome, to = New York, freeSeats = 230
+id = 62066, departureTime = 2024-08-14 12:50, from = London, to = Paris, freeSeats = 230
+id = 31567, departureTime = 2024-08-14 14:50, from = Paris, to = Kyiv, freeSeats = 230
+id = 46700, departureTime = 2024-08-14 16:50, from = Rome, to = Berlin, freeSeats = 230
+id = 58289, departureTime = 2024-08-13 03:50, from = Rome, to = Berlin, freeSeats = 230
+id = 25472, departureTime = 2024-08-13 12:50, from = Paris, to = Rome, freeSeats = 230
+id = 86844, departureTime = 2024-08-13 06:50, from = Kyiv, to = Berlin, freeSeats = 230
+id = 64295, departureTime = 2024-08-14 01:50, from = London, to = Berlin, freeSeats = 230
+id = 10710, departureTime = 2024-08-13 10:50, from = Tokyo, to = London, freeSeats = 230
+id = 41636, departureTime = 2024-08-14 08:50, from = London, to = London, freeSeats = 230
+id = 10823, departureTime = 2024-08-13 13:50, from = New York, to = London, freeSeats = 230
+id = 57287, departureTime = 2024-08-13 03:50, from = London, to = Paris, freeSeats = 230
+id = 20203, departureTime = 2024-08-13 23:50, from = Berlin, to = Kyiv, freeSeats = 230
+id = 74189, departureTime = 2024-08-14 07:50, from = Kyiv, to = Tokyo, freeSeats = 230
+id = 20520, departureTime = 2024-08-14 14:50, from = London, to = Paris, freeSeats = 230
+id = 10983, departureTime = 2024-08-14 13:50, from = Tokyo, to = Kyiv, freeSeats = 230
+id = 21738, departureTime = 2024-08-14 11:50, from = Tokyo, to = Kyiv, freeSeats = 230
+id = 48406, departureTime = 2024-08-14 04:50, from = Kyiv, to = New York, freeSeats = 230
+id = 37630, departureTime = 2024-08-13 03:50, from = Kyiv, to = Kyiv, freeSeats = 230
+id = 15875, departureTime = 2024-08-13 17:50, from = Kyiv, to = New York, freeSeats = 230
+id = 89264, departureTime = 2024-08-13 09:50, from = Rome, to = New York, freeSeats = 230
+id = 76100, departureTime = 2024-08-14 00:50, from = Rome, to = Kyiv, freeSeats = 230
+id = 58793, departureTime = 2024-08-13 14:50, from = Kyiv, to = Rome, freeSeats = 230
+id = 16644, departureTime = 2024-08-13 10:50, from = Rome, to = Berlin, freeSeats = 230
+id = 86030, departureTime = 2024-08-14 08:50, from = Berlin, to = Berlin, freeSeats = 230
+id = 70515, departureTime = 2024-08-13 18:50, from = London, to = Rome, freeSeats = 230
+id = 86014, departureTime = 2024-08-14 00:50, from = Kyiv, to = Kyiv, freeSeats = 230
+id = 50163, departureTime = 2024-08-13 07:50, from = Tokyo, to = London, freeSeats = 230
+id = 32276, departureTime = 2024-08-12 23:50, from = Paris, to = Rome, freeSeats = 230
+id = 47748, departureTime = 2024-08-13 22:50, from = London, to = Berlin, freeSeats = 230
+id = 83727, departureTime = 2024-08-13 23:50, from = London, to = Tokyo, freeSeats = 230
+id = 43918, departureTime = 2024-08-13 11:50, from = Paris, to = Kyiv, freeSeats = 230
+id = 20679, departureTime = 2024-08-13 07:50, from = Rome, to = Kyiv, freeSeats = 230
+id = 92085, departureTime = 2024-08-14 16:50, from = Kyiv, to = Rome, freeSeats = 230
+id = 87920, departureTime = 2024-08-13 01:50, from = Tokyo, to = London, freeSeats = 230
+id = 63059, departureTime = 2024-08-13 23:50, from = Rome, to = New York, freeSeats = 230
