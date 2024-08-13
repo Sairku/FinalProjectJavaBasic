@@ -54,7 +54,7 @@ public class ConsoleMenu {
                     case "2":
                         System.out.print("Enter flight ID: ");
                         flightId = scanner.nextLine();
-                        //flightController.getFlightById(flightId);
+                        flightController.getFlightById(flightId);
                         break;
                     case "3":
                         bookingController.bookFlight(currentUser.getId());

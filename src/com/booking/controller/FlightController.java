@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class FlightController {
-    public static void run() {
+    public void run() {
         FlightService flightService = new FlightService();
         Scanner scanner = new Scanner(System.in);
 
@@ -26,7 +26,9 @@ public class FlightController {
                     createFlight(scanner, flightService);
                     break;
                 case 2:
-                    getFlightById(scanner, flightService);
+                    System.out.print("Enter flight ID: ");
+                    String flightId = scanner.nextLine();
+                    getFlightById(flightId);
                     break;
                 case 3:
                     updateFlight(scanner, flightService);
@@ -47,7 +49,7 @@ public class FlightController {
         }
     }
 
-    private static void printMenu() {
+    private void printMenu() {
         System.out.println("\n--- Меню управления полетами ---");
         System.out.println("1. Добавить новый полет");
         System.out.println("2. Найти полет по ID");
@@ -57,7 +59,7 @@ public class FlightController {
         System.out.println("0. Выйти");
     }
 
-    private static int getIntInput(Scanner scanner, String prompt) {
+    private int getIntInput(Scanner scanner, String prompt) {
         System.out.print(prompt);
         while (!scanner.hasNextInt()) {
             System.out.print("Пожалуйста, введите число: ");
@@ -66,12 +68,12 @@ public class FlightController {
         return scanner.nextInt();
     }
 
-    private static String getStringInput(Scanner scanner, String prompt) {
+    private String getStringInput(Scanner scanner, String prompt) {
         System.out.print(prompt);
         return scanner.next();
     }
 
-    private static void createFlight(Scanner scanner, FlightService flightService) {
+    private void createFlight(Scanner scanner, FlightService flightService) {
         int id = getIntInput(scanner, "Введите ID полета: ");
         String departure = getStringInput(scanner, "Введите пункт отправления: ");
         String destination = getStringInput(scanner, "Введите пункт назначения: ");
@@ -83,10 +85,10 @@ public class FlightController {
         System.out.println("Полет добавлен: " + flight);
     }
 
-    private static void getFlightById(Scanner scanner, FlightService flightService) {
-        int id = getIntInput(scanner, "Введите ID полета для поиска: ");
+    public void getFlightById(String id) {
+        FlightService flightService = new FlightService();
 
-        Flight flight = flightService.get(id);
+        Flight flight = flightService.get(Integer.parseInt(id));
         if (flight != null) {
             System.out.println("Найден полет: " + flight);
         } else {
@@ -94,7 +96,7 @@ public class FlightController {
         }
     }
 
-    private static void updateFlight(Scanner scanner, FlightService flightService) {
+    private void updateFlight(Scanner scanner, FlightService flightService) {
         int id = getIntInput(scanner, "Введите ID полета для обновления: ");
 
         Flight flight = flightService.get(id);
@@ -111,7 +113,7 @@ public class FlightController {
         }
     }
 
-    private static void deleteFlight(Scanner scanner, FlightService flightService) {
+    private void deleteFlight(Scanner scanner, FlightService flightService) {
         int id = getIntInput(scanner, "Введите ID полета для удаления: ");
         Flight flight = flightService.delete(id);
         if (flight != null) {
@@ -121,7 +123,7 @@ public class FlightController {
         }
     }
 
-    private static void listAllFlights(FlightService flightService) {
+    private void listAllFlights(FlightService flightService) {
         List<Flight> flights = flightService.getAll();
 
         if (flights.isEmpty()) {
