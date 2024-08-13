@@ -34,8 +34,8 @@ public class ConsoleMenu {
     private void mainMenu(Scanner scanner) {
         String command;
         String flightId;
-        GeneratorFlightDatabase listTablo = new GeneratorFlightDatabase();
-        listTablo.GeneratorFlight();
+//        GeneratorFlightDatabase listTablo = new GeneratorFlightDatabase();
+//        listTablo.GeneratorFlight();
 
 
         flightController.loadDataFromFile();
@@ -49,12 +49,12 @@ public class ConsoleMenu {
                 switch (command.trim().toLowerCase()) {
                     case "1":
                         System.out.println("Online");
-                        listTablo.getCurrentFlights();
+                        flightController.showCurrentFlights();
                         break;
                     case "2":
                         System.out.print("Enter flight ID: ");
                         flightId = scanner.nextLine();
-                        listTablo.getFlightsById(flightId);
+                        //flightController.getFlightById(flightId);
                         break;
                     case "3":
                         bookingController.bookFlight(currentUser.getId());

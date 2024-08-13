@@ -1,5 +1,8 @@
 package com.booking.informationForFlight;
 
+import com.booking.entities.Flight;
+import com.booking.service.FlightService;
+
 import java.io.*;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
@@ -9,6 +12,7 @@ import java.time.format.DateTimeFormatter;
 public class GeneratorFlightDatabase {
 
     DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+    FlightService flightService = new FlightService();
 
     public void GeneratorFlight(){
     List<OnlineScoreboard> flights = new ArrayList<>();
@@ -19,6 +23,9 @@ public class GeneratorFlightDatabase {
         String destinationTo = DESTINATIONS[random.nextInt(DESTINATIONS.length)];
         String departureTime = LocalDateTime.now().plusHours(random.nextInt(48)).format(FORMATTER);
         flights.add(new OnlineScoreboard( destinationFrom, destinationTo, departureTime));
+
+        Flight flight = new Flight(new Random().nextInt(90000)+10000, destinationFrom, destinationTo, departureTime, 250);
+        flightService.save(flight);
     }
         String filePath = Paths.get("files","flights.txt").toString();
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, java.nio.charset.StandardCharsets.UTF_8))) {

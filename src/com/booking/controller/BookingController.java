@@ -39,7 +39,8 @@ public class BookingController {
 
         while (true) {
             try {
-                int menuItem = Menu.chooseNumericMenu(flightsMenu, true, "Choose a flight: ");
+                System.out.println("-------------------");
+                int menuItem = Menu.chooseNumericMenu(flightsMenu, true, "Choose a flight: \n");
 
                 if (menuItem == 0) {
                     return null;
@@ -74,9 +75,10 @@ public class BookingController {
 
         List<Integer> users = new ArrayList<>();
 
+        System.out.println("-------------------");
         System.out.println("Let's enter passengers data");
 
-        for (int i = 0; i < seatsCount; i++) {
+        for (int i = 1; i <= seatsCount; i++) {
             System.out.println("Passenger " + i);
 
             System.out.print("First name: ");
@@ -87,9 +89,9 @@ public class BookingController {
 
             User user = userService.getUserByName(name, surname);
 
-//            if (user == null) {
-//                user = userService.create(name, surname);
-//            }
+            if (user == null) {
+                user = userService.createUser(name, surname);
+            }
 
             users.add(user.getId());
         }
@@ -127,10 +129,11 @@ public class BookingController {
         System.out.print("Please enter last name: ");
         String surname = input.nextLine();
 
-        User user = userService.getUserByName(name, surname);
+        User user = userService.getUserByName(name.trim(), surname.trim());
 
         if (user == null) {
-            System.out.println("There is no such user!");
+            System.out.println("There are no bookings!"); // System.out.println("There is no such user!");
+            return;
         }
 
         List<Booking> bookings = bookingService.getBookingByUser(user.getId());

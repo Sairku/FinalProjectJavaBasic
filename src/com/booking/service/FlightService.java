@@ -4,6 +4,7 @@ import com.booking.dao.FlightDao;
 import com.booking.entities.Flight;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class FlightService {
@@ -42,11 +43,14 @@ public class FlightService {
     }
 
     public List<Flight> findFlightsByData(String cityFrom, String cityTo, LocalDate date, int seatsCount) {
+        DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+
         return flightDao.getAll()
                 .stream()
                 .filter(flight ->
                         flight.getDeparture().equals(cityFrom) &&
-                        flight.getDestination().equals(cityTo) && // flight.getDateTime().toLocalDate().equals(date) &&
+                        flight.getDestination().equals(cityTo) &&
+                        LocalDate.parse(flight.getDepartureTime(), dateFormat).equals(date) &&
                         flight.getSeatsFree() >= seatsCount
                 )
                 .toList();

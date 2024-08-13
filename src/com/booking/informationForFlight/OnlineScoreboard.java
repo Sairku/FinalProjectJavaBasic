@@ -10,7 +10,7 @@ public class OnlineScoreboard implements Serializable {
     private String departureTime;
     private String from;
     private String to;
-    private int freeSeats = 100;
+    private int freeSeats = 230;
 
     public OnlineScoreboard(String from, String to, String departureTime){
         this.id = new Random().nextInt(90000)+10000;

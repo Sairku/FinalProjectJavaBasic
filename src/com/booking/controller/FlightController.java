@@ -4,6 +4,9 @@ import com.booking.entities.Flight;
 import com.booking.service.FlightService;
 
 import java.io.*;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Scanner;
 
@@ -120,6 +123,26 @@ public class FlightController {
 
     private static void listAllFlights(FlightService flightService) {
         List<Flight> flights = flightService.getAll();
+
+        if (flights.isEmpty()) {
+            System.out.println("Список полетов пуст.");
+        } else {
+            System.out.println("--- Все полеты ---");
+            for (Flight flight : flights) {
+                System.out.println(flight);
+            }
+        }
+    }
+
+    public void showCurrentFlights() {
+        FlightService flightService = new FlightService();
+
+        LocalDateTime now = LocalDateTime.now();
+        DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+
+        List<Flight> flights = flightService.getAll().stream()
+                .filter(flight -> Duration.between(now, LocalDateTime.parse(flight.getDepartureTime(), dateFormat)).toHours() < 24)
+                .toList();
 
         if (flights.isEmpty()) {
             System.out.println("Список полетов пуст.");
