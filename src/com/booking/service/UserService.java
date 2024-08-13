@@ -13,7 +13,7 @@ public class UserService {
         User userRes = null;
 
         for (User user : users) {
-            if (user.getEmail().equals(email) && user.getPassword().equals(password)) {
+            if (user.getEmail() != null && user.getEmail().equals(email) && user.getPassword() != null && user.getPassword().equals(password)) {
                 userRes = user;
                 break;
             }
