@@ -17,6 +17,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.time.Instant;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -43,13 +45,14 @@ public class BookingControllerTest {
     int flightId = (int) Instant.now().toEpochMilli();
     String cityFrom = "Kyiv";
     String cityTo = "Lviv";
-    LocalDate dateFlight = LocalDate.now();
+    LocalDateTime dateFlight = LocalDateTime.now();
+    DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
     Flight flight;
 
     {
         FlightService flightService = new FlightService();
 
-        flight = new Flight(flightId, cityTo, cityFrom, dateFlight.toString(), 250);
+        flight = new Flight(flightId, cityTo, cityFrom, dateFlight.format(dateFormat), 250);
 
         flightService.save(flight);
     }
@@ -77,7 +80,7 @@ public class BookingControllerTest {
                 MockedStatic<Menu> menu = mockStatic(Menu.class)
         ) {
             // mock some data input functions
-            input.when(() -> Input.enterDate(anyString(), any())).thenReturn(dateFlight);
+            input.when(() -> Input.enterDate(anyString(), any())).thenReturn(dateFlight.toLocalDate());
             input.when(() -> Input.enterIntNumber(anyString(), anyInt())).thenReturn(seatsCount);
 
             // enter data
